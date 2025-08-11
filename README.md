@@ -21,7 +21,7 @@ Includes borrower demographics, loan details, credit scores, and loan performanc
 ---
 
 🛠 Tools & Technologies Used
-- **Power BI** – Data loading, transformation, modeling, and visualization
+- **Power BI** – Data loading, transformation, modelling, and visualisation
 - **DAX** – Calculated measures for KPIs such as default rates and YOY changes
 - **Power Query** – Data cleaning and transformation
 
@@ -95,4 +95,9 @@ Includes borrower demographics, loan details, credit scores, and loan performanc
 
 ---
 
+📫 CONTACT
+
+GitHub: [Gitrohinihub](https://github.com/Gitrohinihub)
+LinkedIn : [Rohini Singh](https://www.linkedin.com/in/rohini-singh-8a97a1229)
+Email: miss.rohini09coder@gmail.com
 
