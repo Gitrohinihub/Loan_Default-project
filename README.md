@@ -59,7 +59,21 @@ Includes borrower demographics, loan details, credit scores, and loan performanc
 
 ---
 
-## 💡 Business Recommendations
+📌 Dashboards
+**Main Pages**:
+1. **Loan Overview** – Loan amounts, default rates, and borrower segmentation.
+2. **Demographics & Credit Profiles** – Credit score categories, marital status, and education analysis.
+3. **YOY Trends** – Annual changes in loans and defaults with comparison filters.
+
+![image link](https://github.com/Gitrohinihub/Loan_Default-project/blob/c3c86449e23e2263c9a72747faee4c11db7faf83/Loan%20Default%20Overview.png)
+![image link](https://github.com/Gitrohinihub/Loan_Default-project/blob/c3c86449e23e2263c9a72747faee4c11db7faf83/Applicant%20Demographics%20%26%20Financial%20Profile%20.png)
+![image link](https://github.com/Gitrohinihub/Loan_Default-project/blob/c3c86449e23e2263c9a72747faee4c11db7faf83/Financial%20Risk%20Metrics.png)
+
+Powerbi App : - **Interactive Dashboard** – [View Power BI App Link](https://app.powerbi.com/links/hezArLm8WE?ctid=c9b30289-5c60-41dc-85c2-d8862dea8925&pbi_source=linkShare)
+
+---
+
+💡 Business Recommendations
 1. **Target Low-Risk Segments**  
    - Prioritise full-time employed and high-credit applicants to lower defaults by ~1% overall.
 2. **Stricter Checks for High-Risk Groups**  
@@ -73,7 +87,7 @@ Includes borrower demographics, loan details, credit scores, and loan performanc
 
 ---
 
-## 🔄 Before vs After Impact
+🔄 Before vs After Impact
 | **Before** | **After** |
 |------------|-----------|
 | No segmentation by employment type or credit score | Clear borrower segmentation (e.g., unemployed default rate: 3.39%) |
@@ -83,22 +97,11 @@ Includes borrower demographics, loan details, credit scores, and loan performanc
 
 ---
 
-## 📌 Dashboards
-**Main Pages**:
-1. **Loan Overview** – Loan amounts, default rates, and borrower segmentation.
-2. **Demographics & Credit Profiles** – Credit score categories, marital status, and education analysis.
-3. **YOY Trends** – Annual changes in loans and defaults with comparison filters.
-
-![image link](https://github.com/Gitrohinihub/Loan_Default-project/blob/c3c86449e23e2263c9a72747faee4c11db7faf83/Loan%20Default%20Overview.png)
-![image link](https://github.com/Gitrohinihub/Loan_Default-project/blob/c3c86449e23e2263c9a72747faee4c11db7faf83/Applicant%20Demographics%20%26%20Financial%20Profile%20.png)
-![image link](https://github.com/Gitrohinihub/Loan_Default-project/blob/c3c86449e23e2263c9a72747faee4c11db7faf83/Financial%20Risk%20Metrics.png)
-
-Powerbi App : - **Interactive Dashboard** – [View Power BI App Link](https://app.powerbi.com/links/hezArLm8WE?ctid=c9b30289-5c60-41dc-85c2-d8862dea8925&pbi_source=linkShare)
----
-
 📫 CONTACT
 
 -GitHub: [Gitrohinihub](https://github.com/Gitrohinihub)
+
 -LinkedIn : [Rohini Singh](https://www.linkedin.com/in/rohini-singh-8a97a1229)
+
 -Email: miss.rohini09coder@gmail.com
 
