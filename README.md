@@ -93,11 +93,12 @@ Includes borrower demographics, loan details, credit scores, and loan performanc
 ![image link](https://github.com/Gitrohinihub/Loan_Default-project/blob/c3c86449e23e2263c9a72747faee4c11db7faf83/Applicant%20Demographics%20%26%20Financial%20Profile%20.png)
 ![image link](https://github.com/Gitrohinihub/Loan_Default-project/blob/c3c86449e23e2263c9a72747faee4c11db7faf83/Financial%20Risk%20Metrics.png)
 
+Powerbi App : - **Interactive Dashboard** – [View Power BI App Link](https://app.powerbi.com/links/hezArLm8WE?ctid=c9b30289-5c60-41dc-85c2-d8862dea8925&pbi_source=linkShare)
 ---
 
 📫 CONTACT
 
-GitHub: [Gitrohinihub](https://github.com/Gitrohinihub)
-LinkedIn : [Rohini Singh](https://www.linkedin.com/in/rohini-singh-8a97a1229)
-Email: miss.rohini09coder@gmail.com
+-GitHub: [Gitrohinihub](https://github.com/Gitrohinihub)
+-LinkedIn : [Rohini Singh](https://www.linkedin.com/in/rohini-singh-8a97a1229)
+-Email: miss.rohini09coder@gmail.com
 
