@@ -1,0 +1,100 @@
+ Measures Table 1
+
+1)
+Average Income by Employment type = 
+CALCULATE(AVERAGE('Loan_default'[Income]),ALLEXCEPT('Loan_default','Loan_default'[EmploymentType]))
+
+2)
+Average Loan by Age Group = 
+AVERAGEX(VALUES('Loan_default'[Age Groups]),
+AVERAGE('Loan_default'[LoanAmount]))
+
+3)
+Default Rate by Employment type = 
+VAR totalrecords = COUNTROWS(ALL('Loan_default'))
+var DefaultCases = COUNTROWS(FILTER('Loan_default','Loan_default'[Default]=TRUE()))
+
+RETURN
+ROUND(
+    CALCULATE(DIVIDE(DefaultCases,totalrecords),ALLEXCEPT('Loan_default','Loan_default'[EmploymentType]))*100,2)
+
+4)
+Default Rate by Year = 
+VAR totalloans = CALCULATE(COUNTROWS('Loan_default'),ALLEXCEPT('Loan_default',Loan_default[Year]))
+
+VAR default = CALCULATE(COUNTROWS(FILTER('Loan_default','Loan_default'[Default]=TRUE())),ALLEXCEPT('Loan_default',Loan_default[Year]))
+
+RETURN
+ROUND(DIVIDE(default,totalloans)*100,2)
+
+5)
+Loan Amount by Purpose = SUMX(FILTER('Loan_default',NOT(ISBLANK('Loan_default'[LoanAmount]))),'Loan_default'[LoanAmount])
+
+
+Measures Table 2
+
+1)
+Average of Loan Amt(High Credit) = 
+AVERAGEX(FILTER('Loan_default','Loan_default'[Credit Score Bins]="High"),'Loan_default'[LoanAmount])
+
+2)
+Loan by Education type = 
+COUNTROWS(FILTER('Loan_default',Not(ISBLANK('Loan_default'[LoanID]))))
+
+3)
+Median by Credit Score bins = 
+MEDIANX('Loan_default','Loan_default'[LoanAmount])
+
+4)
+Total Loan (Middle Age Adults) = 
+SUMX(FILTER('Loan_default','Loan_default'[Age Groups]="Middle Age Adults"),'Loan_default'[LoanAmount])
+
+5)
+Total Loan(Credit Bins) = 
+CALCULATE(SUM('Loan_default'[LoanAmount]),'Loan_default'[Age Groups]="Adults",ALLEXCEPT('Loan_default','Loan_default'[Age],'Loan_default'[Age Groups],'Loan_default'[CreditScore],'Loan_default'[Credit Score Bins]))
+
+
+Measures Table 3:
+
+1)
+YOY Default Loan Change = 
+DIVIDE(
+    CALCULATE(COUNTROWS(FILTER('Loan_default','Loan_default'[Default]=TRUE())),'Loan_default'[Year]=YEAR(MAX('Loan_default'[Loan_Date_DD_MM_YYYY])))-
+    CALCULATE(COUNTROWS(FILTER('Loan_default','Loan_default'[Default]=TRUE())),'Loan_default'[Year]=YEAR(MAX('Loan_default'[Loan_Date_DD_MM_YYYY]))-1)
+    ,CALCULATE(COUNTROWS(FILTER('Loan_default','Loan_default'[Default]=TRUE())),'Loan_default'[Year]=YEAR(MAX('Loan_default'[Loan_Date_DD_MM_YYYY]))-1),0)*100
+
+2)
+YOY Loan Amount Change = 
+DIVIDE(
+    CALCULATE(SUM('Loan_default'[LoanAmount]),'Loan_default'[Year]= YEAR(MAX('Loan_default'[Loan_Date_DD_MM_YYYY])))-
+    CALCULATE(SUM('Loan_default'[LoanAmount]),'Loan_default'[Year]=YEAR(MAX('Loan_default'[Loan_Date_DD_MM_YYYY]))-1)
+    ,CALCULATE(SUM('Loan_default'[LoanAmount]),'Loan_default'[Year]=YEAR(MAX('Loan_default'[Loan_Date_DD_MM_YYYY]))-1),0)*100
+
+
+3)
+YTD Loan Amount = 
+CALCULATE(SUM('Loan_default'[LoanAmount]),DATESYTD('Loan_default'[Loan_Date_DD_MM_YYYY].[Date]),ALLEXCEPT('Loan_default',Loan_default[Credit Score Bins],Loan_default[MaritalStatus]))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
