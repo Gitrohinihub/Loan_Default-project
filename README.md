@@ -24,6 +24,7 @@ Includes borrower demographics, loan details, credit scores, and loan performanc
 - **Power BI** – Data loading, transformation, modelling, and visualisation
 - **DAX** – Calculated measures for KPIs such as default rates and YOY changes
 - **Power Query** – Data cleaning and transformation
+- **Sql** – Data cleaning and transformation
 
 ---
 
